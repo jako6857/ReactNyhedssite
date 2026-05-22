@@ -1,0 +1,23 @@
+
+.mobile-cat-bar {
+  display: none;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mobile-cat-bar__select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobile-cat-bar {
+    display: block;
+  }
+}

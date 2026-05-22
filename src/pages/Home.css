@@ -1,0 +1,62 @@
+/* Hjemmeside - styling */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.home__featured {
+  margin-bottom: 2rem;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 2.75rem;
+}
+
+@media (max-width: 768px) {
+  .home__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mosaik 4-op layout */
+.home__mosaic {
+  margin: 2rem 0;
+}
+.mosaic {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 260px 260px;
+  gap: 1rem;
+}
+.mosaic__a { grid-column: 1 / 3; grid-row: 1 / 2; }
+.mosaic__b { grid-column: 3 / 4; grid-row: 1 / 2; }
+.mosaic__c { grid-column: 1 / 2; grid-row: 2 / 3; }
+.mosaic__d { grid-column: 2 / 4; grid-row: 2 / 3; }
+
+@media (max-width: 900px) {
+  .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto auto; }
+  .mosaic__a, .mosaic__b, .mosaic__c, .mosaic__d { grid-column: auto; grid-row: auto; }
+}
+
+/* Vandrette bannere */
+.home__banners {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.home__small-pair {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .home__small-pair { grid-template-columns: 1fr; }
+  .home__banners { grid-auto-flow: row; }
+}

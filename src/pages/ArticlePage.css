@@ -1,0 +1,81 @@
+/* Artikelside - styling */
+.artpage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.artpage__inner {
+  width: 100%;
+}
+
+.artpage__back {
+  display: inline-block;
+  color: #0066cc;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.artpage__back:hover {
+  text-decoration: underline;
+}
+
+.artpage__hero {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.artpage__header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.artpage__title {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+
+.artpage__meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.artpage__date {
+  font-weight: 500;
+}
+
+.artpage__cat {
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.artpage__body {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.artpage__body p {
+  margin-bottom: 1.5rem;
+}
+
+.artpage__status {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.artpage__status--error {
+  color: #d32f2f;
+}
